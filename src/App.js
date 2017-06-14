@@ -7,6 +7,8 @@ import Body from './Body'
 
 import Footer from './Footer'
 
+import Copyright from './Copyright'
+
 class App extends Component {
   render() {
     return (
@@ -29,11 +31,8 @@ class App extends Component {
           </aside>
 
           <Footer />
-          
-        <footer className="expanded row">
-          <h6>&copy; 2017 Erebor Industries</h6>
-          <h6 className="float-right">All rights reserved</h6>
-        </footer>
+          <Copyright />
+
       </div>
     );
   }
