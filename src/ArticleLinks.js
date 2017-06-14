@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './ArticleLinks.css'
+import Comments from './Comments'
 
 class ArticleLinks extends Component {
   constructor() {
@@ -30,7 +31,7 @@ class ArticleLinks extends Component {
             <span className="article-link-text">Share Post</span>
           </a>
         </div>
-        {this.state.showComments ? <p>Comments!</p> : null}
+        {this.state.showComments ? <Comments /> : null}
       </div>
     )
   }
