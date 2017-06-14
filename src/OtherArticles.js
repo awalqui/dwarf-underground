@@ -32,19 +32,20 @@ class OtherArticles extends Component {
     return (
       <div className="small-12 columns other-articles">
         <h2>From around the Realm</h2>
-        {articleData.map(article => {
-          return (
-            <div className="small-6 medium-3 columns other-article">
-              <a href="#">
-                <img src={article.imgSrc} alt={article.alt} />
-                <p>{article.title}</p>
-              </a>
-            </div>
-          )
-        })}
+        {articleData.map(article => <OtherArticle article={article} />)}
       </div>
     )
   }
 }
 
+function OtherArticle (props) {
+  return (
+    <div className="small-6 medium-3 columns other-article">
+      <a href="#">
+        <img src={props.article.imgSrc} alt={props.article.alt} />
+        <p>{props.article.title}</p>
+      </a>
+    </div>
+  )
+}
 export default OtherArticles
