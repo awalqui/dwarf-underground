@@ -7,7 +7,7 @@ import Body from './Body'
 
 import Ad from './Ad'
 
-import Footer from './Footer'
+import OtherArticles from './OtherArticles'
 
 import Copyright from './Copyright'
 
@@ -20,7 +20,7 @@ class App extends Component {
 
         <Ad />
 
-        <Footer />
+        <OtherArticles />
         <Copyright />
 
       </div>

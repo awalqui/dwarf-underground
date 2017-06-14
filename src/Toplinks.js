@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import './Navlinks.css'
+import './Toplinks.css'
 
-class Navlinks extends Component {
+class Toplinks extends Component {
     render() {
         return (
             <div className="float-right nav-links">
@@ -13,4 +13,4 @@ class Navlinks extends Component {
     }
 }
 
-export default Navlinks
+export default Toplinks
